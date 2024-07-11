@@ -25,7 +25,7 @@ export interface ResponseModel {
 })
 export class LoginService {
 
-  readonly API_BASE_URL: string = 'http://localhost:3000';
+  readonly API_BASE_URL: string = 'https://ancient-sands-50709-d78d7a043df6.herokuapp.com';
 
   constructor(private http: HttpClient) { }
 

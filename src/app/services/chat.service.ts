@@ -8,8 +8,8 @@ import { io } from 'socket.io-client';
 })
 export class ChatService {
 
-  readonly API_BASE_URL: string = 'http://localhost:3000';
-  private socket = io('http://localhost:3000');
+  readonly API_BASE_URL: string = 'https://ancient-sands-50709-d78d7a043df6.herokuapp.com';
+  private socket = io(this.API_BASE_URL);
 
   constructor(private http: HttpClient) { }
 
